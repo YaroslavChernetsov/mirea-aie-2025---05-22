@@ -12,7 +12,7 @@ from eda_cli.core import (
 )
 
 
-# Вспомогательная функция — должна быть ОПРЕДЕЛЕНА ДО тестов, которые её используют!
+
 def _sample_df() -> pd.DataFrame:
     return pd.DataFrame(
         {
@@ -52,8 +52,7 @@ def test_missing_table_and_quality_flags():
 def test_correlation_and_top_categories():
     df = _sample_df()
     corr = correlation_matrix(df)
-    # Даже если age содержит NaN, height числовая → corr может быть пустой
-    # Поэтому лучше проверить, что она существует
+    
     assert isinstance(corr, pd.DataFrame)
 
     top_cats = top_categories(df, max_columns=5, top_k=2)
@@ -70,13 +69,13 @@ def test_compute_quality_flags_new_heuristics():
     - has_high_cardinality_categoricals
     - has_numeric_columns_with_low_variation
     """
-    n_rows = 51  # > 50 → превышает порог HIGH_CARDINALITY_THRESHOLD
+    n_rows = 51  
 
     df = pd.DataFrame({
         "const_num": [42] * n_rows,
         "const_cat": ["A"] * n_rows,
-        "high_card_cat": [f"id_{i}" for i in range(n_rows)],  # 51 уникальных
-        "low_var_num": [1.0 + i * 1e-7 for i in range(n_rows)],  # std будет < 1e-6
+        "high_card_cat": [f"id_{i}" for i in range(n_rows)],  
+        "low_var_num": [1.0 + i * 1e-7 for i in range(n_rows)],  
         "normal_col": list(range(n_rows))
     })
 
@@ -84,10 +83,9 @@ def test_compute_quality_flags_new_heuristics():
     missing_df = missing_table(df)
     flags = compute_quality_flags(summary, missing_df)
 
-    # Проверка флагов
+  
     assert flags["has_constant_columns"] is True
     assert flags["has_high_cardinality_categoricals"] is True
     assert flags["has_numeric_columns_with_low_variation"] is True
 
-    # Quality score должен быть снижен
     assert flags["quality_score"] < 1.0
