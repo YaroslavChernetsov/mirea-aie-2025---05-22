@@ -1,0 +1,18 @@
+{
+  "model": {
+    "hidden_sizes": [
+      512,
+      256
+    ],
+    "use_dropout": false,
+    "use_bn": true
+  },
+  "optimizer": {
+    "type": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0
+  },
+  "seed": 42,
+  "dataset": "EMNIST_balanced",
+  "early_stopping": true
+}
