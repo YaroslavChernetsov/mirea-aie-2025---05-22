@@ -1,0 +1,13 @@
+{
+  "experiment_id": "C4",
+  "dataset": "STL10",
+  "model_type": "resnet18",
+  "optimizer": {
+    "type": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0
+  },
+  "seed": 42,
+  "epochs": 15,
+  "fine_tune_type": "layer4+fc"
+}
