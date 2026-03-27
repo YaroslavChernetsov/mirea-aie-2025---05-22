@@ -1,0 +1,6 @@
+experiment_id,task,dataset,seed,split_summary,window_size,horizon,model_summary,features_summary,scaler,optimizer,lr,epochs_trained,best_val_mae,best_val_rmse,best_val_mape,test_mae,test_rmse,test_mape,notes
+B1,forecasting,S12-hw-dataset,42,Train:1012/Val:217/Test:218,,1,Naive Last Value,None,No,,,0,27.550584095703865,31.305861255051934,17.979989581243306,,,,Baseline: last known value
+B2,forecasting,S12-hw-dataset,42,Train:1012/Val:217/Test:218,7,1,Moving Average,rolling_mean_7,No,,,0,4.444019647902613,5.598786269801301,3.072574719664156,,,,Baseline: 7-day moving average
+B3,forecasting,S12-hw-dataset,42,Train:1012/Val:217/Test:218,,1,Ridge Regression,"lag_1,7,14 + rolling + calendar",StandardScaler,,,0,4.369972530348332,5.5637541268831345,3.015755316858539,4.303750075667426,5.309597720759208,3.16083333322315,Ridge on lag/rolling/calendar features
+R1,forecasting,S12-hw-dataset,42,Train:1012/Val:217/Test:218,14,1,"GRU(hidden=64, layers=2)",Raw sequence (window=14),StandardScaler,Adam,0.001,50,4.83546257019043,6.253181457519531,3.2331459522247314,,,,GRU on windowed sequences
+R1,forecasting,S12-hw-dataset,42,Train:1012/Val:217/Test:218,14,1,"GRU(hidden=64, layers=2)",Raw sequence (window=14),StandardScaler,Adam,0.001,50,4.83546257019043,6.253181457519531,3.2331459522247314,,,,GRU on windowed sequences
