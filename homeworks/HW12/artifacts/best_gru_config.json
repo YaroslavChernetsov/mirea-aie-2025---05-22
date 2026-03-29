@@ -8,5 +8,5 @@
   "batch_size": 32,
   "learning_rate": 0.001,
   "seed": 42,
-  "scaler": "StandardScaler"
+  "scaler": "StandardScaler (fit on train only, transform on val/test)"
 }

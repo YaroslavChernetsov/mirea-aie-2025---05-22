@@ -1,11 +1,7 @@
 experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
-C1,classification,STL10,42,"simple_cnn, freeze=False",Adam,0.001,15,0.58,0.0,,,,aug=False
-C2,classification,STL10,42,"simple_cnn, freeze=False",Adam,0.001,15,0.591,0.0,,,,aug=True
-C3,classification,STL10,42,"resnet18, freeze=True",Adam,0.001,15,0.796,0.0,,,,aug=True
-C4,classification,STL10,42,"resnet18, freeze=False",Adam,0.001,15,0.793,0.783625,,,,aug=True
-C1,classification,STL10,42,"simple_cnn, freeze=False",Adam,0.001,15,0.592,0.0,,,,aug=False
-C2,classification,STL10,42,"simple_cnn, freeze=False",Adam,0.001,15,0.563,0.0,,,,aug=True
-C3,classification,STL10,42,"resnet18, freeze=True",Adam,0.001,15,0.794,0.0,,,,aug=True
-C4,classification,STL10,42,"resnet18, freeze=partial",Adam,0.001,15,0.806,0.783625,,,,aug=True
-V1,segmentation,Pascal_VOC,42,DeepLabV3_ResNet50,,,0,,,1.759190559387207,1.5467918872833253,0.25762425661087035,Базовая постобработка маски
-V2,segmentation,Pascal_VOC,42,DeepLabV3_ResNet50,,,0,,,1.759190559387207,1.5467918872833253,0.25762425661087035,Альтернативная постобработка
+C1,classification,STL10,42,simple_cnn,Adam,0.001,15,0.58,,,,,"aug=False, freeze=False"
+C2,classification,STL10,42,simple_cnn,Adam,0.001,15,0.591,,,,,"aug=True, freeze=False"
+C3,classification,STL10,42,resnet18,Adam,0.001,15,0.796,,,,,"aug=False, freeze=True"
+C4,classification,STL10,42,resnet18,Adam,0.001,15,0.803,0.786,,,,"aug=False, freeze=partial"
+V1,segmentation,Pascal_VOC,42,DeepLabV3_ResNet50,,,0,,,1.759190559387207,1.5467918872833253,0.25762425661087035,"Foreground classes: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], Базовая постобработка"
+V2,segmentation,Pascal_VOC,42,DeepLabV3_ResNet50,,,0,,,1.759190559387207,1.5467918872833253,0.25762425661087035,"Foreground classes: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], Альтернативная постобработка"

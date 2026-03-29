@@ -9,5 +9,12 @@
   },
   "seed": 42,
   "epochs": 15,
+  "transforms": {
+    "base": "ToTensor + Normalize(0.5, 0.5, 0.5)",
+    "augmentation": "RandomHorizontalFlip + RandomCrop + ColorJitter + ToTensor + Normalize",
+    "resnet": "Resize(224) + ToTensor + Normalize(ImageNet)"
+  },
+  "preprocess": "Normalize",
+  "augmentation": false,
   "fine_tune_type": "layer4+fc"
 }
