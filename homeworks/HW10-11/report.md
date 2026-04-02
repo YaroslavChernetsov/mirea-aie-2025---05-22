@@ -127,7 +127,11 @@
 - Таблица результатов: `./artifacts/runs.csv`
 - Лучшая модель классификации: `./artifacts/best_classifier.pt`
 - Конфиг: `./artifacts/best_classifier_config.json`
-- Графики: `./artifacts/figures/`
+- Кривые обучения лучшей модели: `./artifacts/figures/classification_curves_best.png`
+- Сравнение экспериментов C1-C4: `./artifacts/figures/classification_compare.png`
+- Примеры аугментаций: `./artifacts/figures/augmentations_preview.png`
+- Примеры сегментации: `./artifacts/figures/segmentation_examples.png`
+- Метрики сегментации: `./artifacts/figures/segmentation_metrics.png`
 
 ### Часть A: Классификация (C1-C4)
 
