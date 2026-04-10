@@ -1,0 +1,4 @@
+query,before_retrieved_sources,after_retrieved_sources,changed
+What are decorators?,Doc_3; Doc_2; Doc_1,Doc_3; Doc_2; Doc_1,False
+How to use generators?,Doc_3; Doc_2; Doc_1,Doc_3; Doc_2; Doc_1,False
+How to create classes?,Doc_3; Doc_2; Doc_1,Doc_3; Doc_2; Doc_1,False
