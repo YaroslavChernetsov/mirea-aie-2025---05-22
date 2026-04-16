@@ -1,6 +1,4 @@
-query,before_retrieved_sources,after_retrieved_sources,changed,improved
-What are decorators?,Doc_3; Doc_2; Doc_1,Doc_3; Doc_2; Doc_1,False,False
-How to use generators?,Doc_3; Doc_2; Doc_1,Doc_3; Doc_2; Doc_1,False,False
-How to create classes?,Doc_3; Doc_2; Doc_1,Doc_3; Doc_2; Doc_1,False,False
-What is Python?,Doc_2; Doc_3; Doc_1,Doc_2; Doc_3; Doc_1,False,True
-How to work with functions?,Doc_3; Doc_2; Doc_1,Doc_3; Doc_2; Doc_1,False,False
+query,before_retrieved_sources,after_retrieved_sources,changed,found_new_doc
+What are decorators?,Doc_3; Doc_2; Doc_1,Doc_11; Doc_12; Doc_3,True,True
+How to use generators?,Doc_3; Doc_2; Doc_1,Doc_12; Doc_11; Doc_4,True,True
+How to create classes?,Doc_3; Doc_2; Doc_1,Doc_13; Doc_3; Doc_1,True,True
