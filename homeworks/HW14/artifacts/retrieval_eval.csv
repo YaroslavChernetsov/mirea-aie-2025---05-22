@@ -1,11 +1,11 @@
 query,expected_source,retrieved_sources,hit_at_k,rank_of_first_relevant
-How to create a list?,Doc_4,Doc_3; Doc_2; Doc_1,0,-1
-What are Python variables?,Doc_3,Doc_2; Doc_3; Doc_1,1,2
-How to define functions?,Doc_5,Doc_3; Doc_2; Doc_1,0,-1
-How to handle errors?,Doc_6,Doc_3; Doc_2; Doc_1,0,-1
-What are dictionaries?,Doc_7,Doc_3; Doc_2; Doc_1,0,-1
-How to read files?,Doc_8,Doc_8; Doc_2; Doc_1,1,1
-How to import libraries?,Doc_9,Doc_9; Doc_3; Doc_4,1,1
-How to use for loops?,Doc_10,Doc_3; Doc_2; Doc_1,0,-1
-How to install Python?,Doc_2,Doc_2; Doc_3; Doc_1,1,1
-What is Python language?,Doc_1,Doc_2; Doc_3; Doc_1,1,3
+How to create a list?,Doc_4,Doc_3; Doc_2; Doc_1,0,
+What are Python variables?,Doc_3,Doc_2; Doc_3; Doc_1,1,2.0
+How to define functions?,Doc_5,Doc_3; Doc_2; Doc_1,0,
+How to handle errors?,Doc_6,Doc_3; Doc_2; Doc_1,0,
+What are dictionaries?,Doc_7,Doc_3; Doc_2; Doc_1,0,
+How to read files?,Doc_8,Doc_8; Doc_2; Doc_1,1,1.0
+How to import libraries?,Doc_9,Doc_9; Doc_3; Doc_4,1,1.0
+How to use for loops?,Doc_10,Doc_3; Doc_2; Doc_1,0,
+How to install Python?,Doc_2,Doc_2; Doc_3; Doc_1,1,1.0
+What is Python language?,Doc_1,Doc_2; Doc_3; Doc_1,1,3.0
