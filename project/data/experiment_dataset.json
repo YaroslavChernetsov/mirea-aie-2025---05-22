@@ -1,0 +1,17 @@
+[
+  {"id": "q01", "text": "Что такое индекс в SQL и в каких случаях он замедляет работу?", "expected_type": "sql", "category": "SQL"},
+  {"id": "q02", "text": "Напишите SQL-запрос, который найдёт второй максимальный оклад сотрудников.", "expected_type": "sql", "category": "SQL"},
+  {"id": "q03", "text": "Объясните различия между INNER JOIN и LEFT JOIN.", "expected_type": "sql", "category": "SQL"},
+  {"id": "q04", "text": "Что такое GIL в Python и как он влияет на многопоточность?", "expected_type": "theory", "category": "Python"},
+  {"id": "q05", "text": "Что выведет Python-код `print([i * i for i in range(3)])`?", "expected_type": "output_prediction", "category": "Python"},
+  {"id": "q06", "text": "Напишите функцию на Python, проверяющую строку на палиндром.", "expected_type": "coding", "category": "Python"},
+  {"id": "q07", "text": "Чем goroutine отличается от системного потока?", "expected_type": "theory", "category": "Go"},
+  {"id": "q08", "text": "Что выведет Go-код `defer fmt.Println(\"done\"); fmt.Println(\"start\")`?", "expected_type": "output_prediction", "category": "Go"},
+  {"id": "q09", "text": "Реализуйте worker pool на Go с использованием каналов.", "expected_type": "coding", "category": "Go"},
+  {"id": "q10", "text": "Спроектируйте сервис сокращения URL для 10 миллионов запросов в сутки.", "expected_type": "system_design", "category": "System design"},
+  {"id": "q11", "text": "Как обеспечить отказоустойчивость сервиса при падении одного дата-центра?", "expected_type": "system_design", "category": "System design"},
+  {"id": "q12", "text": "В чём различие между HTTP-методами PUT и PATCH?", "expected_type": "theory", "category": "Backend"},
+  {"id": "q13", "text": "Напишите функцию LRU-кеша с операциями O(1).", "expected_type": "coding", "category": "Algorithms"},
+  {"id": "q14", "text": "Что выведет JavaScript-код `console.log(typeof null)` и почему?", "expected_type": "output_prediction", "category": "JavaScript"},
+  {"id": "q15", "text": "Как диагностировать рост p95 latency у REST API?", "expected_type": "theory", "category": "Backend"}
+]

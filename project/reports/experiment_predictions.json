@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-06-19T21:59:48.191986+00:00",
+  "model": "gpt-4o-mini",
+  "predictions": [
+    {
+      "id": "q01",
+      "question_type": "sql",
+      "options": [
+        "Индекс ускоряет поиск данных, но может замедлять операции записи.",
+        "Индекс всегда ускоряет все операции.",
+        "Индекс используется только для уникальных значений.",
+        "Индекс не влияет на производительность."
+      ]
+    },
+    {
+      "id": "q02",
+      "question_type": "sql",
+      "options": [
+        "SELECT MAX(salary) FROM employees WHERE salary < (SELECT MAX(salary) FROM employees);",
+        "SELECT salary FROM employees ORDER BY salary DESC LIMIT 1 OFFSET 1;",
+        "SELECT DISTINCT salary FROM employees ORDER BY salary LIMIT 2;",
+        "SELECT salary FROM employees WHERE salary > (SELECT MIN(salary) FROM employees);"
+      ]
+    },
+    {
+      "id": "q03",
+      "question_type": "sql",
+      "options": [
+        "INNER JOIN возвращает только совпадающие строки, а LEFT JOIN возвращает все строки из левой таблицы.",
+        "LEFT JOIN возвращает только совпадающие строки, а INNER JOIN возвращает все строки из левой таблицы.",
+        "Они идентичны и возвращают одни и те же результаты.",
+        "LEFT JOIN используется только для объединения двух таблиц."
+      ]
+    },
+    {
+      "id": "q04",
+      "question_type": "theory",
+      "options": [
+        "GIL - это глобальная блокировка, которая позволяет только одному потоку выполнять байт-код Python в любой момент времени.",
+        "GIL - это механизм, который позволяет всем потокам работать одновременно.",
+        "GIL не влияет на многопоточность в Python.",
+        "GIL - это способ управления памятью в Python."
+      ]
+    },
+    {
+      "id": "q05",
+      "question_type": "output_prediction",
+      "options": [
+        "[0, 1, 4]",
+        "[0, 1, 2]",
+        "[1, 2, 3]",
+        "[0, 1, 2, 3]"
+      ]
+    },
+    {
+      "id": "q06",
+      "question_type": "coding",
+      "options": [
+        "def is_palindrome(s): return s == s[::-1]",
+        "def is_palindrome(s): return s == s.lower()",
+        "def is_palindrome(s): return s == ''.join(reversed(s))",
+        "def is_palindrome(s): return s == s.upper()"
+      ]
+    },
+    {
+      "id": "q07",
+      "question_type": "theory",
+      "options": [
+        "Goroutine легче и управляется Go, в то время как системные потоки управляются операционной системой.",
+        "Goroutine всегда блокирует выполнение, а системные потоки - нет.",
+        "Goroutine требует больше ресурсов, чем системные потоки.",
+        "Goroutine не может быть параллельным."
+      ]
+    },
+    {
+      "id": "q08",
+      "question_type": "output_prediction",
+      "options": [
+        "start\n done",
+        "done\n start",
+        "done",
+        "start"
+      ]
+    },
+    {
+      "id": "q09",
+      "question_type": "coding",
+      "options": [
+        "func worker(ch chan int) { for job := range ch { fmt.Println(job) }}",
+        "func worker(ch chan int) { for job := range ch { return job }}",
+        "func worker(ch chan int) { for job := ch { fmt.Println(job) }}",
+        "func worker(ch chan int) { for job := ch { return }}"
+      ]
+    },
+    {
+      "id": "q10",
+      "question_type": "system_design",
+      "options": [
+        "Использовать реляционную базу данных для хранения URL.",
+        "Использовать NoSQL базу данных для хранения URL и кэширование для ускорения доступа.",
+        "Использовать файловую систему для хранения URL.",
+        "Использовать только кэш без базы данных."
+      ]
+    },
+    {
+      "id": "q11",
+      "question_type": "system_design",
+      "options": [
+        "Использовать резервные дата-центры в разных географических регионах.",
+        "Использовать только один дата-центр с высокой доступностью.",
+        "Необходимо использовать только локальные серверы.",
+        "Использовать только облачные решения."
+      ]
+    },
+    {
+      "id": "q12",
+      "question_type": "theory",
+      "options": [
+        "PUT заменяет весь ресурс, а PATCH обновляет только часть ресурса.",
+        "PATCH заменяет весь ресурс, а PUT обновляет только часть ресурса.",
+        "Они идентичны и могут использоваться взаимозаменяемо.",
+        "PUT используется только для создания ресурсов."
+      ]
+    },
+    {
+      "id": "q13",
+      "question_type": "coding",
+      "options": [
+        "Использовать хеш-таблицу и двусвязный список.",
+        "Использовать только массив.",
+        "Использовать только хеш-таблицу.",
+        "Использовать только двусвязный список."
+      ]
+    },
+    {
+      "id": "q14",
+      "question_type": "output_prediction",
+      "options": [
+        "'object'",
+        "'null'",
+        "'undefined'",
+        "'boolean'"
+      ]
+    },
+    {
+      "id": "q15",
+      "question_type": "theory",
+      "options": [
+        "Анализировать логи и метрики производительности.",
+        "Увеличить количество серверов.",
+        "Сократить количество запросов к API.",
+        "Игнорировать проблему."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "dataset": "data/experiment_dataset.json",
+  "questions_count": 15,
+  "categories": {
+    "Algorithms": 1,
+    "Backend": 2,
+    "Go": 3,
+    "JavaScript": 1,
+    "Python": 3,
+    "SQL": 3,
+    "System design": 2
+  },
+  "expected_types": {
+    "coding": 3,
+    "output_prediction": 3,
+    "sql": 3,
+    "system_design": 2,
+    "theory": 4
+  },
+  "text_length_chars": {
+    "min": 44,
+    "max": 74,
+    "mean": 58.2,
+    "median": 58
+  },
+  "duplicate_ids": 0,
+  "duplicate_texts": 0,
+  "missing_values": 0
+}

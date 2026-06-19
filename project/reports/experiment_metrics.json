@@ -1,0 +1,21 @@
+{
+  "dataset": "data/experiment_dataset.json",
+  "snapshot_generated_at": "2026-06-19T21:59:48.191986+00:00",
+  "model": "gpt-4o-mini",
+  "baseline": {
+    "samples": 15,
+    "predictions": 15,
+    "question_split_accuracy": 1.0,
+    "type_accuracy": 1.0,
+    "options_quality_rate": 0.0,
+    "schema_valid_rate": 1.0
+  },
+  "improved": {
+    "samples": 15,
+    "predictions": 15,
+    "question_split_accuracy": 1.0,
+    "type_accuracy": 1.0,
+    "options_quality_rate": 1.0,
+    "schema_valid_rate": 1.0
+  }
+}
